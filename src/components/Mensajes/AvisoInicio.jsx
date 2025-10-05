@@ -6,12 +6,16 @@ const AvisoInicio = ({ onComenzar }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-6">
       <div className="bg-white rounded-2xl shadow-xl p-8 max-w-lg w-full text-center">
-        <img src={logo} alt="Logo" className="w-24 h-24 mx-auto mb-4" />
+        <Info className="mx-auto mb-4 text-blue-500" size={48} />
         <h1 className="text-2xl font-bold text-gray-800 mb-4">
           Encuesta de Balotaje
         </h1>
         <p className="text-gray-700 mb-6 leading-relaxed">
-          Este formulario tiene <strong>fines exclusivamente académicos</strong>
+          Este formulario tiene{" "}
+          <strong className="font-bold text-black-600 ">
+            fines exclusivamente académicos para la materia de Taller de
+            simulacion de sistemas
+          </strong>
           . No se recopilará información personal ni identificable de los
           participantes.
           <br />
