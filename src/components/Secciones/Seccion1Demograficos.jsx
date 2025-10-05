@@ -138,11 +138,10 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
           {/* Selección de Carrera */}
           {datos.facultad && (
             <select
-              value={datos.carrera_area.split(" - ")[1] || ""}
+              value={datos.carrera_area || ""}
               onChange={(e) => {
                 const carreraSeleccionada = e.target.value;
-                // Guarda ambos concatenados como string final
-                actualizarDato("carrera_area", `${carreraSeleccionada}`);
+                actualizarDato("carrera_area", carreraSeleccionada);
               }}
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
