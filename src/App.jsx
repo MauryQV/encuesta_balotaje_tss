@@ -101,8 +101,9 @@ const EncuestaBallotaje = () => {
     setEnviando(true);
 
     try {
-      const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-      const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+      const SUPABASE_URL = "https://bsjzshzdpeohknmlisoa.supabase.co";
+      const SUPABASE_ANON_KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzanpzaHpkcGVvaGtubWxpc29hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1ODYwOTgsImV4cCI6MjA3NTE2MjA5OH0.oOjoYpVlOZ9O420xPLx_LM94FkWnT698ibf8REc5uGs";
 
       const response = await fetch(
         `${SUPABASE_URL}/rest/v1/respuestas_balotaje`,
