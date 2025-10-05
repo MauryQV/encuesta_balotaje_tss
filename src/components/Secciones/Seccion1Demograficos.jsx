@@ -49,7 +49,7 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
 
       <div>
         <label className="block text-3x1 font-medium text-gray-700 mb-2">
-          Departamento
+          Departamento*
         </label>
         <select
           value={datos.departamento}
@@ -71,7 +71,7 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
       {datos.departamento && (
         <div>
           <label className="block text-3x1 font-medium text-gray-700 mb-2">
-            Provincia
+            Provincia*
           </label>
           <select
             value={datos.provincia}
@@ -90,7 +90,7 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
 
       <div>
         <label className="block text-3x1 font-medium text-gray-700 mb-2">
-          Situación educativa
+          Situación educativa*
         </label>
         <select
           value={datos.situacion_educativa}
@@ -101,10 +101,10 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
         >
           <option value="">Seleccione una opción</option>
           <option value="Estudiante Universitario">
-            Estudiante Universitario
+            Estudiante Universitario*
           </option>
           <option value="Recién Profesionalizado">
-            Recién Profesionalizado
+            Recién Profesionalizado*
           </option>
         </select>
       </div>
@@ -146,7 +146,7 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
               }}
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
-              <option value="">Seleccione una carrera</option>
+              <option value="">Seleccione una carrera*</option>
               {carrerasPorFacultad[datos.facultad].map((carrera) => (
                 <option key={carrera} value={carrera}>
                   {carrera}
@@ -159,7 +159,7 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
 
       <div>
         <label className="block text-3x1 font-medium text-gray-700 mb-2">
-          Estrato socioeconómico
+          Estrato socioeconómico*
         </label>
         <div className="space-y-2">
           {[
@@ -201,7 +201,7 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
 
       <div>
         <label className="block text-3x1 font-medium text-gray-700 mb-2">
-          Estatus laboral
+          Estatus laboral*
         </label>
         <div className="grid grid-cols-2 gap-3">
           {[

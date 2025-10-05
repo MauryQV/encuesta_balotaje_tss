@@ -2,7 +2,7 @@ import React from "react";
 
 const EscalaLikert = ({ valor, onChange, etiquetas = ["Nada", "Muy"] }) => (
   <div className="flex items-center gap-2">
-    <span className="text-sm text-gray-600 w-16">{etiquetas[0]}</span>
+    <span className="text-sm font-bold text-gray-600 w-16">{etiquetas[0]}</span>
     <div className="flex gap-2 flex-1 justify-center">
       {[1, 2, 3, 4, 5].map((num) => (
         <button
@@ -19,7 +19,7 @@ const EscalaLikert = ({ valor, onChange, etiquetas = ["Nada", "Muy"] }) => (
         </button>
       ))}
     </div>
-    <span className="text-sm text-gray-600 w-16 text-right">
+    <span className="text-sm font-bold text-gray-600 w-16 text-right">
       {etiquetas[1]}
     </span>
   </div>

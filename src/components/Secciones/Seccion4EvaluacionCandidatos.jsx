@@ -7,7 +7,7 @@ const Seccion4EvaluacionCandidatos = ({ datos, actualizarDato }) => (
     <h2 className="text-xl font-bold text-gray-800 mb-4">
       Evaluación de Candidatos
     </h2>
-    <p className="text-sm text-gray-600 mb-6">
+    <p className="text-sm font-bold text-gray-600 mb-6">
       Califique a cada candidato en los siguientes aspectos (1 = Muy malo, 5 =
       Excelente)
     </p>

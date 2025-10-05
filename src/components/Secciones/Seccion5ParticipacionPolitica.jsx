@@ -10,14 +10,16 @@ const Seccion5ParticipacionPolitica = ({ datos, actualizarDato }) => (
 
     {participacionSeccion5.map((categoria, idx) => (
       <div key={idx} className="border-b pb-6 last:border-b-0">
-        <h3 className="font-semibold text-red-600 mb-2">{categoria.titulo}</h3>
+        <h3 className="font-bold text-red-700 mb-2 italic">
+          {categoria.titulo}
+        </h3>
         <p className="font-semibold text-sm text-red-600 mb-4">
           {categoria.descripcion}
         </p>
         <div className="space-y-4">
           {categoria.items.map((item) => (
             <div key={item.key}>
-              <label className="text-sm text-gray-700 mb-2 block">
+              <label className="text-sm font-bold text-red-600 mb-2 block">
                 {item.label}
               </label>
               <EscalaLikert

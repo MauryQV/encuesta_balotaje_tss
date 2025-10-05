@@ -6,8 +6,10 @@ import Seccion3FactoresDecision from "./components/Secciones/Seccion3FactoresDec
 import Seccion4EvaluacionCandidatos from "./components/Secciones/Seccion4EvaluacionCandidatos";
 import Seccion5ParticipacionPolitica from "./components/Secciones/Seccion5ParticipacionPolitica";
 import Seccion6PrioridadesFuturo from "./components/Secciones/Seccion6PrioridadesFuturo";
+import AvisoInicio from "./components/Mensajes/AvisoInicio";
 
 const EncuestaBallotaje = () => {
+  const [mostrarAviso, setMostrarAviso] = useState(true);
   const [seccion, setSeccion] = useState(1);
   const [enviado, setEnviado] = useState(false);
   const [enviando, setEnviando] = useState(false);
@@ -144,7 +146,9 @@ const EncuestaBallotaje = () => {
       </div>
     );
   }
-
+  if (mostrarAviso) {
+    return <AvisoInicio onComenzar={() => setMostrarAviso(false)} />;
+  }
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4">
       <div className="max-w-3xl mx-auto">

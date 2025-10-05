@@ -7,9 +7,9 @@ const Seccion3FactoresDecision = ({ datos, actualizarDato }) => (
     <h2 className="text-xl font-bold text-gray-800 mb-4">
       Factores de Decisión
     </h2>
-    <p className="text-sm text-gray-600 mb-6">
+    <p className="text-sm font-bold text-gray-600 mb-6">
       Califique la importancia de cada factor (1 = Nada importante, 5 = Muy
-      importante)
+      importante)*
     </p>
 
     {factoresSeccion3.map((categoria, idx) => (
