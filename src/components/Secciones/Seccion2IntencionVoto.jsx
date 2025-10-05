@@ -26,7 +26,7 @@ const Seccion2IntencionVoto = ({ datos, actualizarDato }) => {
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">
-          ¿Por quién votaría?
+          Si hoy fueran las elecciones ¿Por quién votaría?
         </label>
         <BotonesOpcion
           opciones={opcionesVoto}
