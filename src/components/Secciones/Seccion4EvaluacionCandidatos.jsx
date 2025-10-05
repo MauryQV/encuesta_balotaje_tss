@@ -18,7 +18,7 @@ const Seccion4EvaluacionCandidatos = ({ datos, actualizarDato }) => (
         <div className="space-y-4">
           <div>
             <label className="text-sm text-blue-700 mb-2 block font-medium">
-              Candidato A
+              Rodrigo Paz
             </label>
             <EscalaLikert
               valor={datos[`candidato_a_${key}`]}
@@ -28,7 +28,7 @@ const Seccion4EvaluacionCandidatos = ({ datos, actualizarDato }) => (
           </div>
           <div>
             <label className="text-sm text-green-700 mb-2 block font-medium">
-              Candidato B
+              Jorge Tuto Quiroga
             </label>
             <EscalaLikert
               valor={datos[`candidato_b_${key}`]}
