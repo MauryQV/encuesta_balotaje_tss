@@ -7,6 +7,7 @@ import Seccion4EvaluacionCandidatos from "./components/Secciones/Seccion4Evaluac
 import Seccion5ParticipacionPolitica from "./components/Secciones/Seccion5ParticipacionPolitica";
 import Seccion6PrioridadesFuturo from "./components/Secciones/Seccion6PrioridadesFuturo";
 import AvisoInicio from "./components/Mensajes/AvisoInicio";
+import RuletaPremios from "./components/Premios/RuletaPremios";
 
 const EncuestaBallotaje = () => {
   const [mostrarAviso, setMostrarAviso] = useState(true);
@@ -129,19 +130,7 @@ const EncuestaBallotaje = () => {
   };
 
   if (enviado) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
-          <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">
-            ¡Gracias por participar!
-          </h2>
-          <p className="text-gray-600">
-            Tu respuesta ha sido registrada exitosamente.
-          </p>
-        </div>
-      </div>
-    );
+    return <RuletaPremios />;
   }
   if (mostrarAviso) {
     return <AvisoInicio onComenzar={() => setMostrarAviso(false)} />;

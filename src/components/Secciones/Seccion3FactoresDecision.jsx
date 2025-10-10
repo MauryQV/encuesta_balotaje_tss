@@ -14,11 +14,11 @@ const Seccion3FactoresDecision = ({ datos, actualizarDato }) => (
 
     {factoresSeccion3.map((categoria, idx) => (
       <div key={idx} className="border-b pb-6 last:border-b-0">
-        <h3 className="font-semibold text-gray-800 mb-4">{categoria.titulo}</h3>
+        <h3 className="font-bold text-gray-900 mb-4">{categoria.titulo}</h3>
         <div className="space-y-4">
           {categoria.items.map((item) => (
             <div key={item.key}>
-              <label className="text-sm text-gray-700 mb-2 block">
+              <label className="text-sm font-semibold text-gray-700 mb-2 block">
                 {item.label}
               </label>
               <EscalaLikert
