@@ -37,6 +37,7 @@ const EncuestaBallotaje = () => {
     economia_deuda: 3,
     derechos_genero: 3,
     modelo_desarrollo: 3,
+
     // Sección 4: Evaluación candidatos
     candidato_a_experiencia: 3,
     candidato_b_experiencia: 3,
@@ -53,24 +54,19 @@ const EncuestaBallotaje = () => {
     // Sección 5: Participación política y confianza
     participacion_marchas: 3,
     participacion_redes: 3,
-    participacion_voluntariado: 3,
     participacion_reuniones: 3,
-    confianza_tse: 3,
-    confianza_judicial: 3,
-    confianza_ffaa: 3,
-    confianza_policia: 3,
-    confianza_medios: 3,
-    confianza_ong: 3,
+
+    confianza_oep: 3,
+    confianza_tsj: 3,
+    confianza_ffaa_policia: 3,
+
     // Sección 6: Prioridades futuro
     aspiracion_estabilidad: 3,
-    aspiracion_familia: 3,
+    aspiracion_oportunidades: 3,
     aspiracion_comunidad: 3,
-    aspiracion_emprender: 3,
-    aspiracion_extranjero: 3,
+
     vision_alianzas: 3,
     vision_recursos: 3,
-    vision_ambiente: 3,
-    vision_integracion: 3,
     vision_tecnologia: 3,
   });
 

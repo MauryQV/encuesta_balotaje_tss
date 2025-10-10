@@ -19,7 +19,12 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
           Género*
         </label>
         <BotonesOpcion
-          opciones={["Masculino", "Femenino", "No binario"]}
+          opciones={[
+            "Masculino",
+            "Femenino",
+            "No binario",
+            "Prefiero no decir",
+          ]}
           valorActual={datos.genero}
           onChange={(val) => actualizarDato("genero", val)}
         />
@@ -101,10 +106,10 @@ const Seccion1Demograficos = ({ datos, actualizarDato }) => {
         >
           <option value="">Seleccione una opción</option>
           <option value="Estudiante Universitario">
-            Estudiante Universitario*
+            Estudiante Universitario
           </option>
           <option value="Recién Profesionalizado">
-            Recién Profesionalizado*
+            Recién Profesionalizado
           </option>
         </select>
       </div>

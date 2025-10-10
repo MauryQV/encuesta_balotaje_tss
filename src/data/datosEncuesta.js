@@ -101,26 +101,22 @@ export const criteriosSeccion4 = [
 export const participacionSeccion5 = [
   {
     titulo: 'Nivel de Participación Cívica',
-    descripcion: '¿Con qué frecuencia participa usted en actividades cívicas o políticas?',
+    descripcion: '¿Con qué frecuencia participa usted en actividades relacionadas con las elecciones o el debate político nacional?',
     etiquetas: ['Nunca', 'Muy Frecuentemente'],
     items: [
-      { key: 'participacion_marchas', label: 'Participación en marchas o protestas' },
-      { key: 'participacion_redes', label: 'Participación en debates políticos en redes sociales' },
-      { key: 'participacion_voluntariado', label: 'Voluntariado en organizaciones cívicas o comunitarias' },
-      { key: 'participacion_reuniones', label: 'Asistencia a reuniones de organizaciones estudiantiles o profesionales' }
+      { key: 'participacion_marchas', label: 'Participación en marchas, concentraciones o cabildos sobre temas políticos o electorales' },
+      { key: 'participacion_redes', label: 'Participación en debates sobre los candidatos o sus propuestas (por ejemplo, Tuto Quiroga o Rodrigo Paz) en redes sociales' },
+      { key: 'participacion_reuniones', label: 'Asistencia a reuniones o foros organizados por movimientos ciudadanos o agrupaciones políticas' }
     ]
   },
   {
     titulo: 'Confianza en Instituciones',
-    descripcion: '¿Qué nivel de confianza tiene en las siguientes instituciones?',
+    descripcion: '¿Qué nivel de confianza tiene en las siguientes instituciones para garantizar elecciones transparentes y una democracia estable en Bolivia?',
     etiquetas: ['Ninguna confianza', 'Mucha confianza'],
     items: [
-      { key: 'confianza_tse', label: 'Tribunal Supremo Electoral' },
-      { key: 'confianza_judicial', label: 'Órgano Judicial' },
-      { key: 'confianza_ffaa', label: 'Fuerzas Armadas' },
-      { key: 'confianza_policia', label: 'Policía Nacional' },
-      { key: 'confianza_medios', label: 'Medios de comunicación tradicionales' },
-      { key: 'confianza_ong', label: 'Organizaciones internacionales presentes en Bolivia' }
+      { key: 'confianza_oep', label: 'Órgano Electoral Plurinacional (OEP)' },
+      { key: 'confianza_tsj', label: 'Tribunal Supremo de Justicia' },
+      { key: 'confianza_ffaa_policia', label: 'Fuerzas Armadas y Policía Nacional durante el proceso electoral' }
     ]
   }
 ];
@@ -128,26 +124,22 @@ export const participacionSeccion5 = [
 export const prioridadesSeccion6 = [
   {
     titulo: 'Aspiraciones Personales a Largo Plazo',
-    descripcion: '¿Qué tan importantes son para usted las siguientes metas a 5-10 años?',
+    descripcion: 'Pensando en el futuro del país y en su vida personal, ¿qué tan importantes son para usted las siguientes metas a 5-10 años?',
     etiquetas: ['Nada importante', 'Muy importante'],
     items: [
-      { key: 'aspiracion_estabilidad', label: 'Estabilidad económica y laboral' },
-      { key: 'aspiracion_familia', label: 'Formar una familia' },
-      { key: 'aspiracion_comunidad', label: 'Contribuir al desarrollo de su comunidad' },
-      { key: 'aspiracion_emprender', label: 'Emprender un negocio propio' },
-      { key: 'aspiracion_extranjero', label: 'Vivir o trabajar en el extranjero temporal o permanentemente' }
+      { key: 'aspiracion_estabilidad', label: 'Lograr estabilidad económica y laboral bajo un gobierno eficiente y transparente' },
+      { key: 'aspiracion_oportunidades', label: 'Tener oportunidades para progresar sin emigrar del país' },
+      { key: 'aspiracion_comunidad', label: 'Contribuir al desarrollo de su comunidad a través de iniciativas ciudadanas o proyectos locales' }
     ]
   },
   {
     titulo: 'Visión de Bolivia en el Mundo',
-    descripcion: '¿Qué tan de acuerdo está con las siguientes afirmaciones sobre el rol de Bolivia?',
+    descripcion: '¿Qué tan de acuerdo está con las siguientes afirmaciones sobre la dirección que debería tomar Bolivia bajo un nuevo gobierno?',
     etiquetas: ['Totalmente en desacuerdo', 'Totalmente de acuerdo'],
     items: [
-      { key: 'vision_alianzas', label: 'Bolivia debería fortalecer sus alianzas con países de la región' },
-      { key: 'vision_recursos', label: 'Bolivia debería enfocarse en la explotación de recursos naturales para su desarrollo' },
-      { key: 'vision_ambiente', label: 'Bolivia debería liderar en la protección del medio ambiente a nivel global' },
-      { key: 'vision_integracion', label: 'La integración económica con países vecinos es crucial para el crecimiento boliviano' },
-      { key: 'vision_tecnologia', label: 'El desarrollo tecnológico y la innovación deben ser la principal prioridad nacional' }
+      { key: 'vision_alianzas', label: 'Bolivia debería priorizar alianzas internacionales basadas en valores democráticos y económicos del candidato electo' },
+      { key: 'vision_recursos', label: 'Bolivia debería promover el desarrollo aprovechando sus recursos naturales de forma sostenible y transparente' },
+      { key: 'vision_tecnologia', label: 'El próximo gobierno debería impulsar el desarrollo tecnológico y la innovación como política de Estado' }
     ]
   }
 ];
