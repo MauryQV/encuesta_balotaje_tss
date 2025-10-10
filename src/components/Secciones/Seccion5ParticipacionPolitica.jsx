@@ -19,7 +19,7 @@ const Seccion5ParticipacionPolitica = ({ datos, actualizarDato }) => (
         <div className="space-y-4">
           {categoria.items.map((item) => (
             <div key={item.key}>
-              <label className="text-sm font-bold text-red-600 mb-2 block">
+              <label className="text-sm font-normal text-red-600 mb-2 block italic">
                 {item.label}
               </label>
               <EscalaLikert
