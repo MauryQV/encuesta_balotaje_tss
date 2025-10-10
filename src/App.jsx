@@ -140,23 +140,6 @@ const EncuestaBallotaje = () => {
     }
   };
 
-  if (yaRespondi) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
-          <div className="text-6xl mb-4">🚫</div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">
-            Ya has respondido
-          </h2>
-          <p className="text-gray-600">
-            Ya completaste esta encuesta anteriormente. Solo se permite una
-            respuesta por usuario.
-          </p>
-        </div>
-      </div>
-    );
-  }
-
   if (enviado) {
     return <RuletaPremios />;
   }
