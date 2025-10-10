@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import { ChevronRight, ChevronLeft, Send, CheckCircle } from "lucide-react";
 import Seccion1Demograficos from "./components/Secciones/Seccion1Demograficos";
 import Seccion2IntencionVoto from "./components/Secciones/Seccion2IntencionVoto";
@@ -14,6 +15,7 @@ const EncuestaBallotaje = () => {
   const [seccion, setSeccion] = useState(1);
   const [enviado, setEnviado] = useState(false);
   const [enviando, setEnviando] = useState(false);
+  const [yaRespondi, setYaRespondi] = useState(false); // ← AGREGADO
 
   const [datos, setDatos] = useState({
     // Sección 1: Demográficos
@@ -71,6 +73,13 @@ const EncuestaBallotaje = () => {
     vision_tecnologia: 3,
   });
 
+  useEffect(() => {
+    const yaRespondio = localStorage.getItem("encuesta_respondida");
+    if (yaRespondio) {
+      setYaRespondi(true);
+    }
+  }, []);
+
   const actualizarDato = (campo, valor) => {
     setDatos((prev) => ({ ...prev, [campo]: valor }));
   };
@@ -117,6 +126,8 @@ const EncuestaBallotaje = () => {
       );
 
       if (response.ok) {
+        // Guardar en localStorage
+        localStorage.setItem("encuesta_respondida", "true");
         setEnviado(true);
       } else {
         alert("Error al enviar. Por favor intenta de nuevo.");
@@ -129,12 +140,31 @@ const EncuestaBallotaje = () => {
     }
   };
 
+  if (yaRespondi) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
+          <div className="text-6xl mb-4">🚫</div>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">
+            Ya has respondido
+          </h2>
+          <p className="text-gray-600">
+            Ya completaste esta encuesta anteriormente. Solo se permite una
+            respuesta por usuario.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   if (enviado) {
     return <RuletaPremios />;
   }
+
   if (mostrarAviso) {
     return <AvisoInicio onComenzar={() => setMostrarAviso(false)} />;
   }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4">
       <div className="max-w-3xl mx-auto">
