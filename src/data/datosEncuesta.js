@@ -11,6 +11,8 @@ export const carrerasPorFacultad = {
     'Ingeniería electromecánica',
     'Ingeniería eléctrica',
     'Ingeniería mecánica',
+    'Ingenieria quimica',
+    'Ingenieria de alimentos',
     'Ingeniería matemática',
     'Ingeniería en biotecnología'
   ],
