@@ -69,7 +69,7 @@ const RuletaPremios = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-600 via-yellow-500 to-orange-400 flex items-center justify-center p-4">
       <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 max-w-md w-full">
         <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2 text-gray-800">
-          ¡Gira la Ruleta! Premios disponiles 3/5
+          ¡Gira la Ruleta! Premios disponiles 2/5
         </h1>
         <p className="text-center text-gray-600 mb-8">
           Ganaste el derecho de participar en nuestro sorteo
