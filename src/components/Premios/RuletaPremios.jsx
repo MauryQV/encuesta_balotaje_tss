@@ -8,19 +8,19 @@ const RuletaPremios = () => {
   const [yaGiro, setYaGiro] = useState(false);
 
   const premios = [
-    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.3 },
-    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.3 },
+    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.2 },
+    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.2 },
     {
       nombre: "5 Bs",
       color: "from-green-500 to-gold-400",
-      probabilidad: 0.025,
+      probabilidad: 0.2,
     },
-    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.3 },
-    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.05 },
+    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.1 },
+    { nombre: "Nada", color: "from-gray-400 to-gray-300", probabilidad: 0.1 },
     {
       nombre: "5 Bs",
       color: "from-green-500 to-yellow-400",
-      probabilidad: 0.025,
+      probabilidad: 0.2,
     },
   ];
 
